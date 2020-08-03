@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Covid in {{wow['Country']}}</title>
+</head>
+
+<body>
+    <h3 class="country-name">
+        Country Name: {{wow['Country']}}
+    </h3>
+    {% for i in json_data %}
+    <div class="covid-background">
+        <a href="#" class="covid-date">{{i['Date']}}</a>
+        <h5 class="card-title">Deaths: {{i['Deaths']}}</h5>
+        <p>People Confirmed Covid: {{i['Confirmed']}}</p>
+        <p>People Recovered Covid: {{i['Recovered']}}</p>
+        <p>Active: {{i['Active']}}</p>
+
+    </div>
+
+    {% endfor %}
+</body>
+
+</html>

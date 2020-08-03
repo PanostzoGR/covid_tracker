@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.covid-background{
+    background-color: #E5E5E5;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.covid-date{
+    text-decoration: none;
+    color:blue;
+}
+
+.card-title{
+    border-left: 1px solid #433737;
+    border-right: 1px solid #433737;
+}
+
+.country-name{
+    display: flex;
+    justify-content: center;
+}
